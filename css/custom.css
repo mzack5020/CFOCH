@@ -1,0 +1,115 @@
+#googleCalendar {
+    max-width: 100%;
+}
+
+.blogSection {
+    overflow-y: auto;
+    max-height: 500px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgba(227,216,216,0.5);
+    border-radius: 15px;
+    height: 500px;
+}
+
+.blogPost {
+    background-color: rgba(26,255,102,.4);
+    height: 150px;
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.blogHeader {
+    height: 40px;
+}
+
+.blogTitle {
+    width: 70%;
+    float: left;
+    height: 40px;
+    vertical-align: middle;  
+    overflow-y: auto;
+    overflow-x: auto;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.blogUser {
+    width: 30%;
+    float: right;
+    height: 40px;
+    overflow-y: auto;
+    overflow-x: auto;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.blogDescription {
+    height: 100px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.loginCover {
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    background-color: rgba(0,0,0,0.5);
+    overflow-y: hidden;
+}
+
+.blankBackground {
+    background-color: transparent;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.noFluff {
+    padding: 0px;
+    margin: 0px;
+}
+
+#blogTitleStyle {
+    font-size: 18px;
+    vertical-align: baseline;
+}
+
+.blogUserStyle {
+    vertical-align: baseline;
+    font-family:"Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+}
+
+.blogDescStyle {
+    margin: 5px;
+}
+
+#logoutButtonSection {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
