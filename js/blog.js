@@ -26,7 +26,17 @@ var email; // Email
 
 window.onload = function () {
     if(getCookie("loggedIn") == "true") {
-        function success(data){ console.log(data);} 
+        function success(data) { 
+            console.log("Previous login cookie verified!");
+            console.log(data);
+            fn = data.first_name;
+            ls = data.last_name;
+            id = data.ownerId;
+            email = data.email;
+            setCookie("username", email, 0.3);        
+            setCookie("loggedIn", "true", 0.3);
+            setUpUserSpace();
+        } 
         function error(data){ console.log(data);} 
         Backendless.UserService.isValidLogin(new Backendless.Async(success, error));
     }
@@ -173,6 +183,7 @@ function logout() {
     var blogs = document.getElementById("blogTemplate");
     blogs.style.display = "inline";
     $("#blogs").addClass('loginCover');
+    setCookie("loggedIn", "false");
 }
 
 /******************COOKIE MANAGEMENT********************/
