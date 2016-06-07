@@ -29,9 +29,7 @@
     width: 70%;
     float: left;
     height: 40px;
-    vertical-align: middle;  
-    overflow-y: auto;
-    overflow-x: auto;
+    vertical-align: middle; 
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -39,15 +37,11 @@
     width: 30%;
     float: right;
     height: 40px;
-    overflow-y: auto;
-    overflow-x: auto;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .blogDescription {
     height: 100px;
-    overflow-y: auto;
-    overflow-x: auto;
 }
 
 .loginCover {
@@ -166,6 +160,31 @@
     #comment .comment-item {
         margin: 0 0 30px
     }
+}
+
+.blogTitle > input {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.blogDescription > input {
+    width: 99%;
+    height: 95%;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+#new_comment_user {    
+    padding-top: 6px;    
+}
+
+#new_comment_user > p {
+    font-size: 14pt;
 }
 
 
