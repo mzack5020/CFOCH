@@ -66,6 +66,7 @@ function Users(args)
 
 function demoLogin() {  
     $("div").removeClass("loginCover");
+    setUpUserSpace();
 }
 
 function login() {
@@ -150,7 +151,7 @@ function setUpUserSpace() {
 }
 
 function retrieveBlogPosts() {
-    var blogs = document.getElementById("blogs");
+    var blogs = document.getElementById("dbBlog");
     var query = Backendless.Persistence.of( blog_posts ).find();
     var blogPosts = query["data"];  
     
@@ -180,8 +181,11 @@ function retrieveBlogPosts() {
 function logout() {
     document.getElementById("loginRequired").style.display = "inline";
     document.getElementById("logoutButtonSection").style.display = "none";
+    document.getElementById("")
     var blogs = document.getElementById("blogTemplate");
     blogs.style.display = "inline";
+    document.getElementById("dbBlog").innerHTML = "";
+    console.log("CLEARED");
     $("#blogs").addClass('loginCover');
     setCookie("loggedIn", "false");
 }
