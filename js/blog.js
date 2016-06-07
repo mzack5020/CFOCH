@@ -16,7 +16,7 @@ Backendless.initApp(applicationId, secretKey, version);
 /* User Account Information */
 
 var fn;    // First Name
-var ls;    // Last Name
+var ln;    // Last Name
 var id;    // Owner ID
 var email; // Email
 
@@ -30,7 +30,7 @@ window.onload = function () {
             console.log("Previous login cookie verified!");
             console.log(data);
             fn = data.first_name;
-            ls = data.last_name;
+            ln = data.last_name;
             id = data.ownerId;
             email = data.email;
             setCookie("username", email, 0.3);        
@@ -42,7 +42,7 @@ window.onload = function () {
     }
 }
 
-/*      END RETRIEVE PREVIOUS LOGIN     */  
+/*      END RETRIEVE PREVIOUS LOGIN     */   
 
 /*      CLASS STRUCTURE     */
 
@@ -50,7 +50,7 @@ function blog_posts(args) {
     args = args || {};
     this.title = args.title;
     this.description = args.description;
-    this.userId = args.userID;
+    this.ownerId = args.ownerId;
 }
 
 function Users(args)
@@ -66,6 +66,7 @@ function Users(args)
 
 function demoLogin() {  
     $("div").removeClass("loginCover");
+    setUpUserSpace();
 }
 
 function login() {
@@ -74,7 +75,7 @@ function login() {
     {
         console.log( "user has logged in" );
         fn = user.first_name;
-        ls = user.last_name;
+        ln = user.last_name;
         id = user.ownerId;
         email = user.email;
         setCookie("username", email, 0.3);        
@@ -100,7 +101,7 @@ function register() {
     {
         console.log( "User has been registered" );
         fn = user.first_name;
-        ls = user.last_name;
+        ln = user.last_name;
         id = user.ownerId;
         email = user.email;
         setCookie("username", email, 0.3);        
@@ -146,11 +147,12 @@ function setUpUserSpace() {
     blogs.style.display = "none";
     document.getElementById("loginRequired").style.display = "none";
     document.getElementById("logoutButtonSection").style.display = "inline";
+    document.getElementById("new_comment_user").innerHTML = "<p class='noFluff blogUserStyle text-center'><strong>" + fn + " " + ln +       "</strong></p>";
     retrieveBlogPosts();
 }
 
 function retrieveBlogPosts() {
-    var blogs = document.getElementById("blogs");
+    var blogs = document.getElementById("dbBlog");
     var query = Backendless.Persistence.of( blog_posts ).find();
     var blogPosts = query["data"];  
     
@@ -180,10 +182,33 @@ function retrieveBlogPosts() {
 function logout() {
     document.getElementById("loginRequired").style.display = "inline";
     document.getElementById("logoutButtonSection").style.display = "none";
+    document.getElementById("")
     var blogs = document.getElementById("blogTemplate");
     blogs.style.display = "inline";
+    document.getElementById("dbBlog").innerHTML = "";    
     $("#blogs").addClass('loginCover');
     setCookie("loggedIn", "false");
+}
+
+function postComment() {
+    /*checkParameters();
+    console.log(id);
+    var newPost = new blog_posts({
+        title: document.getElementById("new_comment_title").value,
+        description: document.getElementById("new_comment_description").value,
+        ownerId: id
+    });
+    Backendless.persistence.of( blog_post ).save(newPost);*/
+}
+
+function checkParameters() {
+    var title = document.getElementById("new_comment_title").value;
+    var description = document.getElementById("new_comment_description").value;
+    
+    if((title != "") && (description != ""))
+        document.getElementById("postButton").disabled = false;
+    else 
+        document.getElementById("postButton").disabled = true;    
 }
 
 /******************COOKIE MANAGEMENT********************/

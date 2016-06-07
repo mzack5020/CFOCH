@@ -29,9 +29,7 @@
     width: 70%;
     float: left;
     height: 40px;
-    vertical-align: middle;  
-    overflow-y: auto;
-    overflow-x: auto;
+    vertical-align: middle; 
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -39,15 +37,11 @@
     width: 30%;
     float: right;
     height: 40px;
-    overflow-y: auto;
-    overflow-x: auto;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .blogDescription {
     height: 100px;
-    overflow-y: auto;
-    overflow-x: auto;
 }
 
 .loginCover {
@@ -90,17 +84,108 @@
     display: none;
 }
 
-.portfolioPhoto {
-    width: 360px;
-    height: 202.500px;
-    max-height: 100%;
+#comment .comment-item {
+    margin: 0 0 15px;
+    right: 0;
+    box-shadow: 5px;
 }
 
+#comment .comment-item .comment-link {
+    display: block;
+    position: relative;
+    max-width: 50%;
+    margin: 0 auto
+}
 
+#comment .comment-item .comment-link .comment-hover {
+    background: rgba(26, 255, 102, .9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s
+}
 
+#comment .comment-item .comment-link .comment-hover:hover {
+    opacity: 1
+}
 
+#comment .comment-item .comment-link .comment-hover .comment-hover-content {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+    margin-top: -12px;
+    color: #fff
+}
 
+#comment .comment-item .comment-link .comment-hover .comment-hover-content i {
+    margin-top: -12px
+}
 
+#comment .comment-item .comment-link .comment-hover .comment-hover-content h3,
+#comment .comment-item .comment-link .comment-hover .comment-hover-content h4 {
+    margin: 0
+}
+
+#comment .comment-item .comment-caption {
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 25px
+}
+
+#comment .comment-item .comment-caption h4 {
+    text-transform: none;
+    margin: 0
+}
+
+#comment .comment-item .comment-caption p {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    margin: 0
+}
+
+#comment * {
+    z-index: 2
+}
+
+@media (min-width:767px) {
+    #comment .comment-item {
+        margin: 0 0 30px
+    }
+}
+
+.blogTitle > input {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.blogDescription > input {
+    width: 99%;
+    height: 95%;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+#new_comment_user {    
+    padding-top: 6px;    
+}
+
+#new_comment_user > p {
+    font-size: 14pt;
+}
 
 
 
