@@ -347,6 +347,7 @@ section h3.section-subheading {
     display: block;
     position: relative;
     max-width: 400px;
+    max-height: 202.5px;
     margin: 0 auto
 }
 
