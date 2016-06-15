@@ -191,14 +191,23 @@ function logout() {
 }
 
 function postComment() {
-    /*checkParameters();
-    console.log(id);
+    checkParameters();
     var newPost = new blog_posts({
         title: document.getElementById("new_comment_title").value,
         description: document.getElementById("new_comment_description").value,
         ownerId: id
     });
-    Backendless.persistence.of( blog_post ).save(newPost);*/
+    
+    function postSuccessful(newPost) {        
+        alert("Post successful!");
+        $("create-post").modal("hide");
+    }
+    
+    function onError(err) {
+        console.log(err);
+    }
+    
+    Backendless.Persistence.of( blog_posts ).save(newPost, new Backendless.Async(postSuccessful, onError));
 }
 
 function checkParameters() {
