@@ -206,10 +206,44 @@
 	height: 100%;
 }
 
+.instructionHeading {
+    font-weight: bold;
+    color: #1AFF66;
+    font-size: 1.5em;
+}
 
+.instructionList {
+    text-align: left;
+}
 
+.imgExample {
+    text-align:left;
+    max-width: 40%;
+}
 
+.steps {
+    text-align:center;
+    font-weight:bold;
+    font-size: 1.2em;
+    color:#1AFF66;
+}
 
+.stepDescription {
+    text-align:left;
+}
+
+.stepDescriptionList {
+    display:block;
+    text-align:center;        
+}
+
+@media(min-width: 767px) {
+    .stepDescription ol {
+        display:block;
+        text-align:center;
+        padding: 0px;
+    }
+}
 
 
 
