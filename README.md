@@ -1,26 +1,22 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Agency](http://startbootstrap.com/template-overviews/agency/)
+# [Care for Our Common Home](tiny.cc/CFOCH)
 
-[Agency](http://startbootstrap.com/template-overviews/agency/) is a one page agency portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form.
+The SJN Care for Our Common Home (CCH) Ministry, guided by a rich tradition of Catholic social teaching, works to bring to life the message of Pope Francis’s encyclical, Laudato Si’: On Care for Our Common Home, in all relevant aspects of parish life, including worship, faith formation, social ministry, and facilities management. <br><br>In response to the Church’s moral call for action, we seek to better understand the interconnectedness of all of God’s creation and act in solidarity with vulnerable populations around the world and for future generations. We will share Church teaching on care for creation, strive to reduce our carbon footprint as a parish, and provide resources and encouragement so that all parishioners can live in a more sustainable manner as faithful stewards of creation.
 
-## Getting Started
+## Developed using Twitter Bootstrap
 
-To use this theme, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+Bootstrap template provided by [Start Bootstrap](http://startbootstrap.com/template-overviews/agency/). 
 
-## Bugs and Issues
+## Facebook Plug-in
 
-Have a bug or an issue with this theme? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-agency/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/agency/).
+Facebook is constantly updated using the Facebook RSS feed plugin.
 
-## Creator
+## Custom Blog
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Partner at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+Blog custom built using [Backendless](www.backendless.com) for user management as well as data storage. Using the backendless API, users can register, login, and post blogs. Comments on individual blogs and file uploads soon to come! Backendless verifies each user by sending a verification link to their email. 
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+## Future Goals
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-agency/blob/gh-pages/LICENSE) license.
+Administrators should be able to approve/disapprove blog posts before they are visible to the public
+Administrators should be able to approve/disapprove new users
+Photo gallery
+File upload capability for blogs as well as for the gallery
