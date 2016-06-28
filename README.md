@@ -16,7 +16,7 @@ Blog custom built using [Backendless](www.backendless.com) for user management a
 
 ## Future Goals
 
-Administrators should be able to approve/disapprove blog posts before they are visible to the public
-Administrators should be able to approve/disapprove new users
-Photo gallery
+Administrators should be able to approve/disapprove blog posts before they are visible to the public<br>
+Administrators should be able to approve/disapprove new users<br>
+Photo gallery<br>
 File upload capability for blogs as well as for the gallery
