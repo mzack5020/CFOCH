@@ -12,7 +12,7 @@ Facebook is constantly updated using the Facebook RSS feed plugin.
 
 ## Custom Blog
 
-Blog custom built using [Backendless](backendless.com) for user management as well as data storage. Using the backendless API, users can register, login, and post blogs. Comments on individual blogs and file uploads soon to come! Backendless verifies each user by sending a verification link to their email. 
+Blog custom built using [Backendless](https://backendless.com) for user management as well as data storage. Using the backendless API, users can register, login, and post blogs. Comments on individual blogs and file uploads soon to come! Backendless verifies each user by sending a verification link to their email. 
 
 ## Future Goals
 
